@@ -1,0 +1,45 @@
+{
+  "name": "solidity-safe-call",
+  "version": "1.0.0",
+  "description": "Safe Call lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "scripts/test.sh",
+    "test:watch": "nodemon test/** contracts/** --exec 'npm test'",
+    "lint": "npx eslint test && npx solium -d contracts",
+    "lint:fix": "npx eslint --fix test && npx solium -d contracts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachomazzara/solidity-safe-call.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachomazzara/solidity-safe-call/issues"
+  },
+  "homepage": "https://github.com/nachomazzara/solidity-safe-call#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.1",
+    "eslint": "^4.18.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "ethereumjs-abi": "^0.6.5",
+    "ganache-cli": "^6.1.0",
+    "mocha": "^3.5.3",
+    "prettier": "^1.11.1",
+    "solidity-sha3": "^0.4.1",
+    "solium": "^1.1.8",
+    "truffle": "^5.0.0-beta.1",
+    "truffle-flattener": "^1.2.4",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^0.20.4"
+  }
+}
